@@ -3,7 +3,8 @@ import './currency.css'
 
 function Currency() {
   return (
-    <div>
+    <div className='currency'>
+        di
     </div>
   )
 }
