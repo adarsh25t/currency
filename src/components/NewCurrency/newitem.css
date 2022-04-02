@@ -23,6 +23,7 @@
     background: none;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 .add_right button i{
     color: rgba(41, 40, 40, 0.836);
