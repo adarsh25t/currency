@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 function SearchCurrency({search}) {
 
   return (
-    <div>
+    <div className='search'>
         <input type="text" onChange={(event)=>search(event.target.value)}/>
     </div>
   )

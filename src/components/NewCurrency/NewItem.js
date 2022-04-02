@@ -23,21 +23,19 @@ function NewItem({list,loading}) {
  
 
   return (
-    <div>
+    <div className='all_currency'>
       {!loading && list.map((item,index)=>{
-          if(index <7){
-            return(
-              <div className="add_item" key={index}>
-                <div className='add_left'>
-                  <h5>{item.name}</h5>
-                  <span>{item.symbol}</span>
-                </div>
-                <div className="add_right">
-                  <button onClick={()=>addHandler(item)}><i class="fas fa-plus"></i></button>
-                </div>
+          return(
+            <div className="add_item" key={index}>
+              <div className='add_left'>
+                <h5>{item.name}</h5>
+                <span>{item.symbol}</span>
               </div>
-          )}
-    })}
+              <div className="add_right">
+                <button onClick={()=>addHandler(item)}><i class="fas fa-plus"></i></button>
+              </div>
+            </div>
+      )})}
     </div>
   )
 }

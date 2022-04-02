@@ -23,3 +23,11 @@
     color: white;
     cursor: pointer;
 }
+/* -------------------------------- search ------------------------------------ */
+.search input{
+    width: 98%;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom: .7px solid rgba(100, 99, 99, 0.575);
+}
