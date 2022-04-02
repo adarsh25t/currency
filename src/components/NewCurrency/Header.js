@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { hideAdd } from '../../Store/ShowAddCurrency';
 import './newCurrency.css'
 
-function Header() {
+function Header({isShow,title}) {
 
     const dispatch = useDispatch();
 
@@ -13,7 +13,8 @@ function Header() {
 
     return (
         <div className='add_header'>
-            <i class="fas fa-times" onClick={hideHandler}></i>
+            <h3>{title}</h3>
+            {isShow ? <i class="fas fa-times" onClick={hideHandler}></i> : ""}
         </div>
     )
 }

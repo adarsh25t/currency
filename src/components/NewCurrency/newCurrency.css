@@ -9,11 +9,17 @@
 .add_header{
     height: 40px;
     background-color: rgb(3, 3, 71);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add_header h3{
+    font-size: 13px;
+    color: white;
+    margin-left: 10px;
 }
 .add_header i{
-    float: right;
     padding-right: 15px;
-    padding-top: 15px;
     color: white;
     cursor: pointer;
 }

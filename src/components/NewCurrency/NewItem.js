@@ -6,32 +6,20 @@ import { hideAdd } from '../../Store/ShowAddCurrency';
 import { AllCurrency } from '../../Store/ShowAllCurrency';
 import './newitem.css'
 
-function NewItem() {
+function NewItem({list,loading}) {
 
-  const [list,setList] = useState();
-  const [loading,setLoading] = useState(true);
   const dispatch = useDispatch();
 
-  async function allCurrency(){
-    setLoading(true)
-    const API_URl = "https://data.messari.io/api/v1/assets?fields=id,slug,symbol,name,metrics/market_data/price_usd,metrics/market_data/percent_change_usd_last_24_hours";
-    let response = await fetch(API_URl);
-    let Data = await response.json();
-    setList(Data.data);
-    setLoading(false);
-  }
-
-  useEffect(()=>{
-
-    allCurrency();
-
-  },[])
+  const currency = useSelector((state)=>{
+    return state.currency
+  })
 
  const addHandler = (item)=>{
     dispatch(AllCurrency(item));
-    console.log(item);
-    //dispatch(hideAdd(false))
+    dispatch(hideAdd(false))
  }
+
+
  
 
   return (
