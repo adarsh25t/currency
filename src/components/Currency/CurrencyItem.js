@@ -16,7 +16,7 @@ function CurrencyItem({data}) {
                 </div>
                 <div className="curr_right">
                     <h5>${data.metrics.market_data.price_usd}</h5>
-                    <span>+{live}</span>
+                    <span>{live}</span>
                 </div>
             </div>
         </div>

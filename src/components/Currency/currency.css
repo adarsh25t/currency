@@ -5,6 +5,18 @@
 }
 
 /* ----------------------currency item------------------------- */
+.add_alert{
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    border: 1px solid rgba(133, 132, 132, 0.39);
+    width: 300px;
+    position: absolute;
+    left: 22px;
+    top: 40%;
+    border-radius: 5px;
+    font-size: 14px;
+}
 .currency_item{
     padding: 15px;
     height: 40px;

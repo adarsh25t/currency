@@ -10,14 +10,14 @@ function Currency() {
   })
 
   let Currency = Items.map((item)=>{
-        return(
-          <CurrencyItem data={item} key={item.id}/>
-        )
+      return(
+        <CurrencyItem data={item} key={item.id}/>
+      )
   })
 
   return (
     <div className='currency'>
-        {Currency}
+        {Currency.length >0 ? Currency : <h3 className='add_alert'>Add New Currency</h3>} 
     </div>
   )
 }

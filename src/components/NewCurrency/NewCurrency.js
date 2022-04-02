@@ -19,7 +19,6 @@ function NewCurrency() {
         setList(Data.data);
         setLoading(false);
   }
-
   function searchHandler(val){
       setSearch(val)
       if(val !== ""){
@@ -31,13 +30,9 @@ function NewCurrency() {
         
       }
   }
-
   useEffect(()=>{
     allCurrency();
   },[search])
-
-
-  
 
 
   return (

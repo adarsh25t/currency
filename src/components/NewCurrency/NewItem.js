@@ -10,17 +10,10 @@ function NewItem({list,loading}) {
 
   const dispatch = useDispatch();
 
-  const currency = useSelector((state)=>{
-    return state.currency
-  })
-
- const addHandler = (item)=>{
-    dispatch(AllCurrency(item));
-    dispatch(hideAdd(false))
- }
-
-
- 
+  const addHandler = (item)=>{
+      dispatch(AllCurrency(item));
+      dispatch(hideAdd(false))
+  }
 
   return (
     <div className='all_currency'>
