@@ -2,6 +2,7 @@ import { display } from '@mui/system';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { hideAdd } from '../../Store/ShowAddCurrency';
 import { AllCurrency } from '../../Store/ShowAllCurrency';
 import './newitem.css'
 
@@ -28,6 +29,8 @@ function NewItem() {
 
  const addHandler = (item)=>{
     dispatch(AllCurrency(item));
+    console.log(item);
+    //dispatch(hideAdd(false))
  }
  
 

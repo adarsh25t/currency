@@ -6,10 +6,6 @@ import './newly.css'
 
 function NewlyCurrency() {
 
-  const state = useSelector((state)=>{
-    console.log(state);
-  })
-
   return (
     <div className='currency-wrapper'>
         <Currency/>
