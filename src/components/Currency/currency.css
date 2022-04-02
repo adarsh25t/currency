@@ -1,0 +1,57 @@
+/* .....................currency ------------------------------ */
+.currency{
+    
+}
+
+/* ----------------------currency item------------------------- */
+.currency_item{
+    padding: 15px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid rgba(141, 137, 137, 0.548);
+}
+.curr_left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.curr_left img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.curr_left .curr_name{
+    margin-left: 20px;
+    position: relative;
+    margin-top: -15px;
+}
+.curr_name h5{
+    font-size: 16px;
+    font-weight: 400;
+}
+.curr_name span{
+    position: absolute;
+    top: 50px;
+    font-size: 13px;
+    color: rgba(87, 85, 85, 0.87);
+    font-weight: 500;
+}
+.curr_right{
+    position: relative;
+    margin-top: -15px;
+}
+.curr_right h5{
+    color: rgba(44, 43, 43, 0.932);
+    font-family: 300;
+    font-size: 13px;
+}
+.curr_right span{
+    position: absolute;
+    top: 40px;
+    font-size: 12px;
+    color: green;
+    right: 0px;
+}
