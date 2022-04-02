@@ -1,0 +1,29 @@
+.add_item{
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(141, 137, 137, 0.548);
+}
+.add_left{
+    position: relative;
+    margin-top: -10px;
+}
+.add_left h3{
+    font-size: 14px;
+    font-family: 300 !important;
+}
+.add_left span{
+    position: absolute;
+    top: 40px;
+    font-size: 11px;
+}
+.add_right button{
+    background: none;
+    border: none;
+    outline: none;
+}
+.add_right button i{
+    color: rgba(41, 40, 40, 0.836);
+}
