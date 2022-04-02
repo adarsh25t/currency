@@ -6,9 +6,12 @@ const ShowAddCurrency = createSlice({
     initialState:false,
     reducers:{
         showAdd:(state,action)=>{
-            return state = true;
+            return true;
+        },
+        hideAdd:(state,action)=>{
+            return false;
         }
     }
 });
-export const showAdd = ShowAddCurrency.actions;
+export const {showAdd,hideAdd} = ShowAddCurrency.actions;
 export default ShowAddCurrency.reducer;

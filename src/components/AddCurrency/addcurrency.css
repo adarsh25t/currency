@@ -1,4 +1,4 @@
-button{
+.add-new{
     width: 100%;
     padding: 10px;
     background-color: white;
@@ -11,8 +11,8 @@ button{
     font-weight: 500;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    color: rgb(56, 56, 56)6, 56, 56)6, 56, 56);
+    color: rgb(56, 56, 56);
 }
-button i{
+.add-new i{
     padding-right: 15px;
 }
